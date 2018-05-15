@@ -1,6 +1,9 @@
 <div class="container">
-  <div class="row">
+  <div class="row title-block">
     <h1 class="underlined"><%= @task.title.capitalize %></h1>
+    <div class="edit underlined"><i class="fas fa-pencil-alt"></i> <%= link_to 'Edit this task', edit_path %></div>
+  </div>
+  <div class="row">
     <p class="details">📝 <%= @task.details.capitalize %></p>
     <p class="status"><%= @task.completed ? "The task is done ✌️" : "This task is not done 🔥" %><p>
     <hr>

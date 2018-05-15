@@ -26,4 +26,19 @@ hr {
   border-left: 10px solid rgba(46, 204, 113, 0.2);
 }
 
+.title-block {
+  position: relative;
 
+}
+
+.edit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.form-check {
+  margin: 10px 0px 10px 0px !important;
+}
