@@ -1,0 +1,5 @@
+<%= form_for @task, html: {class: "form-container"} do |f| %>
+<%= f.text_field :title, placeholder: 'What\'s it\'s name?', class: 'form-control input-field' %>
+<%= f.text_area :details, placeholder: 'Jot it down! ✍️', class: 'form-control input-field' %>
+<%= f.submit "Create your new task", class: 'btn btn-success' %>
+<% end %>
