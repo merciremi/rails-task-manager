@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <h1 class="underlined"><%= @task.title.capitalize %></h1>
-    <div class="details"><%= @task.details.capitalize %></div>
-    <div class="uncompleted"><%= @task.completed %></div>
+    <p class="details">📝 <%= @task.details.capitalize %></p>
+    <p class="status"><%= @task.completed ? "The task is done ✌️" : "This task is not done 🔥" %><p>
     <hr>
     <div><i class="fas fa-undo-alt"></i> <%= link_to 'Back to my tasks', tasks_path %></div>
   </div>

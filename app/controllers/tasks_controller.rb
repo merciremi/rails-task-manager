@@ -22,4 +22,7 @@ class TasksController < ApplicationController
     params.require(:task).permit(:title, :details, :completed)
   end
 
+  def done?
+  end
+
 end
