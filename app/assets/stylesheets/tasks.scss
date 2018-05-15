@@ -5,7 +5,11 @@
 ul {
   list-style-type: none;
   margin-top: 20px;
-  margin-left: -20px;
+  -webkit-padding-start: 0 !important;
+}
+
+hr {
+  margin-top: 30px;
 }
 
 .form-container {

@@ -1,14 +1,14 @@
 <div class="container">
-  <h1 class="underlined">My tasks</h1>
   <div class="row">
+    <h1 class="underlined">My tasks</h1>
     <ul>
       <% @tasks.each do |task| %>
-        <li><i class="far fa-square"></i>
-          <%= link_to "#{task.title.capitalize}", task_path(task) %>
-        </li>
+      <li><i class="far fa-square"></i>
+        <%= link_to "#{task.title.capitalize}", task_path(task) %>
+      </li>
       <% end %>
     </ul>
     <hr>
-    <div><i class="fas fa-plus"></i><%= link_to ' Add a new task', new_path %></div>
+    <div><i class="fas fa-plus"></i> <%= link_to 'Add a new task', new_path %></div>
   </div>
 </div>
